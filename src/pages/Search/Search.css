@@ -1,0 +1,122 @@
+.header-container {
+    display: flex;
+    width: 60vw;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    gap: 4vw;
+}
+
+.logo {
+    position: absolute;
+    top: 3%;
+    left: 2%;
+    width: 3.5vw;
+    height: auto;
+}
+
+.title {
+    color: #251659;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.search-input {
+    border-radius: 0.75vw;
+    background: #FFF;
+    box-shadow: 0vw 0vw 1vw 0vw rgba(0, 0, 0, 0.10);
+    width: 50vw;
+    height: 3.5vw;
+    flex-shrink: 0;
+    border-color: transparent;
+    padding-left: 2vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+    font-size: 1vw;
+}
+
+.input-container {
+    position: relative;
+    width: fit-content;
+}
+
+form {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button {
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.submit-button svg {
+    width: 3vw;
+    height: 3vw;
+}
+
+input::placeholder {
+    color: #C5C5C5;
+    font-family: Inter;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.menu {
+    width: 7vw;
+    height: 40vw;
+    flex-shrink: 0;
+    border-radius: 0vw 1.5vw 1.5vw 0vw;
+    background: linear-gradient(180deg, #BE0503 0%, #020873 100%);
+    position: relative;
+    left: 0%;
+    top: 15%;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+.menu-decor {
+    width: 0.3vw;
+    height: 4.5vw;
+    flex-shrink: 0;
+    border-radius: 0.3vw 0vw 0vw 0.3vw;
+    background: #FFF;
+    position: absolute;
+    right: 0%;
+    top: 5%;
+}
+
+.user-profile {
+    width: 4.5vw;
+    height: 4.5vw;
+    flex-shrink: 0;
+    border-radius: 0.5vw;
+    background: rgba(255, 255, 255, 0.10);
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.user-profile:hover {
+    border: 0.1vw solid white;
+}
