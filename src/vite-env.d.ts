@@ -12,7 +12,6 @@ declare module "*.svg" {
 interface ProcessEnv {
   REACT_APP_GOOGLE_API_KEY: string;
   REACT_APP_SEARCH_ENGINE_ID: string;
-  // Add other environment variables as needed
 }
 
 declare namespace NodeJS {

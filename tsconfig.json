@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "composite": true,  // Required for project references
+    "composite": true, 
     "skipLibCheck": true,
     "strict": true,
     "moduleResolution": "node",
