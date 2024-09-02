@@ -1,0 +1,46 @@
+.search-result-page {
+    background-color: #FAFAFA;
+}
+
+.logo {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    width: 3.5vw;
+    height: auto;
+}
+
+.query {
+    color: #251659;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.75vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    position: absolute;
+    left: 12vw;
+    top: 5%;
+}
+
+.menu-container {
+    top: 10vw;
+    position: absolute;
+}
+
+.search-bar-container {
+    position: absolute;
+    bottom: 2vw;
+    left: 12vw;
+}
+
+.main-results {
+    position: absolute;
+    top: 10vw;
+    left: 12vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 1.5vw;
+}

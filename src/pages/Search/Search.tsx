@@ -28,7 +28,7 @@ const Search: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="search-page">
       <div className="logo">
         <Logo />
       </div>

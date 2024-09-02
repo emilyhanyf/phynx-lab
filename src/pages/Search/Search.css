@@ -1,3 +1,7 @@
+.search-page {
+    background-color: #FAFAFA;
+}
+
 .header-container {
     display: flex;
     width: 60vw;
@@ -28,23 +32,6 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-}
-
-
-.submit-button {
-    position: absolute;
-    right: 3%;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-}
-
-.submit-button svg {
-    width: 3vw;
-    height: 3vw;
 }
 
 .user-profile {
