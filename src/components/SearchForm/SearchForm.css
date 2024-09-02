@@ -4,46 +4,47 @@
     box-shadow: 0vw 0vw 1vw 0vw rgba(0, 0, 0, 0.10);
     width: 50vw;
     height: 3.5vw;
-    flex-shrink: 0;
     border-color: transparent;
     padding-left: 2vw;
-    padding-top: 0.5vw;
-    padding-bottom: 0.5vw;
     font-size: 1vw;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .input-container {
-    position: relative;
-    width: fit-content;
-}
-
-form {
-    align-items: center;
     display: flex;
-    justify-content: center;
-}
-
-.submit-button {
-    position: absolute;
-    right: 3%;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-}
-
-.submit-button svg {
-    width: 3vw;
-    height: 3vw;
+    align-items: center;
+    width: fit-content;
+    position: relative;
 }
 
 input::placeholder {
     color: #C5C5C5;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 1vw;
-    font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-button {
+    position: absolute;
+    right: 0.05vw;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-button svg {
+    width: 2.5vw;
+    height: 2.5vw;
 }

@@ -30,30 +30,6 @@
     line-height: normal;
 }
 
-.search-input {
-    border-radius: 0.75vw;
-    background: #FFF;
-    box-shadow: 0vw 0vw 1vw 0vw rgba(0, 0, 0, 0.10);
-    width: 50vw;
-    height: 3.5vw;
-    flex-shrink: 0;
-    border-color: transparent;
-    padding-left: 2vw;
-    padding-top: 0.5vw;
-    padding-bottom: 0.5vw;
-    font-size: 1vw;
-}
-
-.input-container {
-    position: relative;
-    width: fit-content;
-}
-
-form {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
 
 .submit-button {
     position: absolute;
@@ -69,15 +45,6 @@ form {
 .submit-button svg {
     width: 3vw;
     height: 3vw;
-}
-
-input::placeholder {
-    color: #C5C5C5;
-    font-family: Inter;
-    font-size: 1vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 .user-profile {

@@ -1,16 +1,21 @@
 import React, { useState } from 'react';
-import SubmitButton from '../SubmitButton/SubmitButton'; 
+import SubmitButton from '../SubmitButton/SubmitButton';
 import './SearchForm.css';
 
 interface SearchFormProps {
-  handleSearch: (event: React.FormEvent<HTMLFormElement>) => void;
+  handleSearch: (query: string) => void;
 }
 
 const SearchForm: React.FC<SearchFormProps> = ({ handleSearch }) => {
   const [query, setQuery] = useState<string>('');
 
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    handleSearch(query);
+  };
+
   return (
-    <form onSubmit={handleSearch} className="search-form">
+    <form onSubmit={onSubmit}>
       <div className="input-container">
         <input
           type="text"
@@ -19,7 +24,6 @@ const SearchForm: React.FC<SearchFormProps> = ({ handleSearch }) => {
           placeholder="질문을 입력하세요."
           className="search-input"
         />
-        {/* The SubmitButton does not need an onClick here */}
         <SubmitButton />
       </div>
     </form>

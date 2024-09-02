@@ -11,3 +11,19 @@
 .submit-button svg {
     display: block;
 }
+
+.submit-button {
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.submit-button svg {
+    width: 3vw;
+    height: 3vw;
+}

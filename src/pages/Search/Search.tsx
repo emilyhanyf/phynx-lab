@@ -5,8 +5,7 @@ import SideMenu from "../../components/SideMenu/SideMenu";
 import SearchForm from "../../components/SearchForm/SearchForm";
 
 const Search: React.FC = () => {
-  const handleSearch = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleSearch = async (query: string) => { // Accepting query as a parameter
     
     const API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
     const CX = import.meta.env.VITE_SEARCH_ENGINE_ID;    
