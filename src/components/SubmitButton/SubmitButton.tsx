@@ -2,7 +2,7 @@ import React from "react";
 import "./SubmitButton.css";
 
 interface SubmitButtonProps {
-  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 }
 
 const SubmitButton: React.FC<SubmitButtonProps> = ({ onClick }) => {

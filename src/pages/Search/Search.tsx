@@ -1,18 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Search.css";
-import { useNavigate } from "react-router-dom";
-import SearchHistory from "../../components/SearchHistory/SearchHistory";
-import SubmitButton from "../../components/SubmitButton/SubmitButton";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
+import SideMenu from "../../components/SideMenu/SideMenu";
+import SearchForm from "../../components/SearchForm/SearchForm";
 
 const Search: React.FC = () => {
-  const navigate = useNavigate();
-  const UserProfile = () => {
-    navigate("/profile");
-  };
-
-  const [query, setQuery] = useState<string>("");
-
   const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault();
     
@@ -43,29 +35,12 @@ const Search: React.FC = () => {
       </div>
 
       {/* Side Menu */}
-      <div className="menu">
-        <SearchHistory />
-        <SearchHistory />
-        <SearchHistory />
-        <div className="menu-decor" />
-        <button className="user-profile" onClick={UserProfile} />
-      </div>
+      <SideMenu />
 
       {/* Header and Search Section */}
       <div className="header-container">
         <div className="title">PhnyX RAG에게 무엇이든 물어보세요.</div>
-        <form onSubmit={handleSearch} className="search-form">
-          <div className="input-container">
-            <input
-              type="text"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder="질문을 입력하세요."
-              className="search-input"
-            />
-            <SubmitButton onClick={handleSearch}/>
-          </div>
-        </form>
+        <SearchForm handleSearch={handleSearch}/>
       </div>
     </div>
   );
