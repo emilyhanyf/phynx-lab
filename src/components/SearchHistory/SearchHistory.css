@@ -5,11 +5,11 @@
     border-radius: 0.5vw;
     background: rgba(0, 0, 0, 0.10);
     position: relative;
-    top: 5%;
+    top: 3%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 10%;
+    padding-bottom: 1vw;
     background-color: transparent;
     cursor: pointer;
 }
@@ -18,22 +18,28 @@
     border: 0.1vw solid white;
 }
 
+button {
+    width: 4.5vw;
+    height: 4.5vw;
+}
+
 .search-history {
     width: 4.5vw;
     height: 4.5vw;
-    flex-shrink: 0;
     border-radius: 0.5vw;
     background: rgba(0, 0, 0, 0.10);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-left: 0.1vw;
+    padding-right: 0.1vw;
 }
 
 .icon {
     width: 2.3vw;
     height: 2.3vw;
-    margin-bottom: 5%; 
+    margin-bottom: 0.1vw; 
 }
 
 .search-history-text {
@@ -43,5 +49,4 @@
     color: white;
     font-size: 0.8vw;
     white-space: nowrap;
-    width: 100%;
 }

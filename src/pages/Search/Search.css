@@ -102,7 +102,7 @@ input::placeholder {
     background: #FFF;
     position: absolute;
     right: 0%;
-    top: 5%;
+    top: 3%;
 }
 
 .user-profile {
@@ -112,7 +112,7 @@ input::placeholder {
     border-radius: 0.5vw;
     background: rgba(255, 255, 255, 0.10);
     left: 50%;
-    bottom: 5%;
+    bottom: 3%;
     transform: translateX(-50%);
     position: absolute;
 }
