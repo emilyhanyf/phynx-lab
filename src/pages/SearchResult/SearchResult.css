@@ -19,25 +19,25 @@
     font-weight: 800;
     line-height: normal;
     position: absolute;
-    left: 12vw;
+    left: 11.5vw;
     top: 5%;
 }
 
 .menu-container {
-    top: 10vw;
+    top: 9vw;
     position: absolute;
 }
 
 .search-bar-container {
     position: absolute;
     bottom: 2vw;
-    left: 12vw;
+    left: 11.5vw;
 }
 
 .main-results {
     position: absolute;
-    top: 10vw;
-    left: 12vw;
+    top: 9vw;
+    left: 11vw;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
