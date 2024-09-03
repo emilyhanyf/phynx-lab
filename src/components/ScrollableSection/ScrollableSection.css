@@ -6,6 +6,7 @@
     width: 55vw;
     overflow-y: auto;
     padding: 0.5vw;
+    padding-right: 1vw;
 }
 
 .box-container {
